@@ -18,7 +18,7 @@ async function login(){
     let user = users.find(x => x.AccountNo == answer.accountNo && x.pinCode ==answer.Pin)
     if( typeof user != "undefined"){
         console.log(`Welcome ${user.name}`);
-       // mainScreen(user.balance);
+        mainScreen(user.balance);
     }
     else{
         console.log("Your enter invalid pin or account number")
