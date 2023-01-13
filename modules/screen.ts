@@ -25,11 +25,11 @@ async function mainScreen(balance:number){
         }
     ]);
     switch(options.menu){
-       case "Balance Inquiry":
-        console.log(`Your Current Balance is ${balance}`);
+        case "Balance Inquiry":
+          console.log(`Your Current Balance is ${balance}`);
         break;
         case "cash withdraw":
-         await cashwithdraw(balance);
+           await cashwithdraw(balance);
            console.log(`your transaction is successfull and your new balance is : ${balance}`);
         break;
         case "Utility Bills":
@@ -40,8 +40,8 @@ async function mainScreen(balance:number){
             balance= await cashDeposite(balance);
             console.log(`your transaction is successfull and your new balance is : ${balance}`);
         break;
-        case "Money Transfer": 
-        balance= await transfer(balance);
+            case "Money Transfer": 
+            balance= await transfer(balance);
         break;
         case "Exit": 
         anothertrans = "no";

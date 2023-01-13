@@ -1,8 +1,9 @@
 import inquirer from "inquirer";
 async function otherAmount(balance) {
+    debugger;
     const otherAmt = await inquirer.prompt([
         {
-            name: "other Amount",
+            name: "otherAmount",
             type: "number",
             message: "Enter your Amount"
         }
